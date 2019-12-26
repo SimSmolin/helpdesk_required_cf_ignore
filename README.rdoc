@@ -1,0 +1,12 @@
+= helpdesk_required_cf_ignore
+
+При создании новой задачи путем отправки электронного письма, при наличии обязательных пользавательских полей
+(custom_field) у задачи (issue), вновь созданная задача не проходила валидацию и не создавалась.
+ Установка данного патча решает эту задачу.
+
+ Проверено с плагином:
+   name 'Redmine helpdesk plugin'
+   author 'Stefan Husch'
+   description 'Redmine helpdesk plugin'
+   version '0.0.15'
+
