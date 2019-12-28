@@ -1,6 +1,6 @@
 require_dependency 'mail_handler'
 module HelpdeskRequiredCfIgnore
-  module MailHandlerPatch
+  module MailHandlerPatchIgnore
     def self.included(base) # :nodoc:
       base.send(:include, InstanceMethods)
 
@@ -49,4 +49,4 @@ module HelpdeskRequiredCfIgnore
 end # module HelpdeskRequiredCfIgnore
 
 # Add module to MailHandler class
-MailHandler.send(:include, HelpdeskRequiredCfIgnore::MailHandlerPatch)
+MailHandler.send(:include, HelpdeskRequiredCfIgnore::MailHandlerPatchIgnore)

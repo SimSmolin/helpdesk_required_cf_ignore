@@ -1,5 +1,5 @@
 require 'redmine'
-require 'mail_handler_patch'
+require 'mail_handler_patch_ignore'
 Redmine::Plugin.register :helpdesk_required_cf_ignore do
   name 'Helpdesk ignore required custom field for e-mail'
   author 'Sergey Melnikov'
